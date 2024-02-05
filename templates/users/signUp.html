@@ -1,6 +1,11 @@
 {% extends 'main.html'%}
 {% block content %}
   <section>
-    This is the signup page
+    <form method="post" action="">
+      {% csrf_token %}
+        {{form.as_p}}
+        <button type ="Submit">Submit</button>
+    </form>
+
   </section>
 {% endblock content %}
