@@ -1,5 +1,7 @@
 from django.shortcuts import render,redirect
 from .forms import CustomUserCreationForm
+
+
 def signUpView(request):
   form = CustomUserCreationForm()
   if request.method == "POST":
